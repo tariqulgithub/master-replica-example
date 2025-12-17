@@ -46,7 +46,7 @@ master-replica-example/
 git clone https://github.com/tariqulgithub/master-replica-example.git
 cd master-replica-example
 ```
-### 2 Create network if not exist
+### 2. Create network if not exist
 
 ```
 docker network create --driver bridge relvora-network
