@@ -42,35 +42,40 @@ master-replica-example/
 
 ### 1. Clone the repository
 
-bash
+```
 git clone https://github.com/tariqulgithub/master-replica-example.git
 cd master-replica-example
+```
 
 ### 2. Start the containers
 
 > **Warning:** For the first run, remove old volumes to allow init scripts to execute properly.
 
-bash
+```
 docker compose down -v
 docker compose up -d
+```
 
 
 ### 3. Verify the setup
 
 **Check master databases:**
 
-bash
+```
 docker exec -it mysql-master mysql -urelvora -prelvorapassword -e "SHOW DATABASES;"
+```
 
 **Check replica databases (read-only):**
 
-bash
+```
 docker exec -it mysql-replica mysql -ureport -preportpassword -e "SHOW DATABASES;"
+```
 
 **Check replication status:**
 
-bash
+```
 docker exec -it mysql-replica mysql -uroot -prootpassword -e "SHOW REPLICA STATUS\G"
+```
 
 ---
 
