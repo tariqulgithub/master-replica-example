@@ -25,7 +25,7 @@ The setup is ready for **development and testing**, and can be adapted for produ
 
 ## Project Structure 📁
 
-\`\`\`
+```
 master-replica-example/
 │
 ├─ docker-compose.yml         # Docker Compose setup for master and replica
@@ -34,7 +34,7 @@ master-replica-example/
 ├─ replica-init/
 │   └─ replica-init.sql       # Replica initialization: configure replication from master
 └─ README.md                  # Project documentation
-\`\`\`
+```
 
 ---
 
